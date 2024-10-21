@@ -1,0 +1,9 @@
+A.html shows me how to create form, input video and also create table header and footer also.
+B.html is a table (a responsive one) ---incomplete
+C.html is a card (a responsive one) ---complete
+ran.html is for codes that I copy and paste to run the and see how they work.---mostly empty
+D.html is a gallery (a responsive one) ----kinda complete; needs js for navigation
+   ---still  needs a screenshot
+F.html is a Google homepage clone ---complete
+G.html is for Hamburger menu ----has many versions:
+  G1

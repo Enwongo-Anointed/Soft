@@ -1,0 +1,352 @@
+                                                  HTML_CSS
+ NOTE:The HTML header element, <header>, should be used to define a header section for a page, article, or other content.
+It's commonly used at the top of a page to include a logo, company name, search feature, and navigation.
+HTML elements to use for grouping content: ARTICLE, ASIDE, MAIN, DIV & SECTION.
+
+1. 100VH would represent all (i.e 100%) of the viewport's height (screen's width), or the visible part of the browser window's height.
+And of course, VW stands for “viewport width”, which is the viewable screen's width.
+100VW would represent all (i.e 100%) of the viewport's width (screen's width), or the visible part of the browser window's width.
+                                                  while
+100% would represent 100% of the image or of the video or of the whatever's size (be it height or width).
+Viewport(the visible part of the browser window).
+vh is useful for creating responsive designs because it adjusts automatically regardless of the device or screen size.
+
+2. The class element can be used on any tag.
+
+3. 'margin: 0px auto'
+The above means that margin-top, margin-bottom is "Zero(0)px" while, margin-left, margin-right is "automatic"
+It is used to centre whatever it's applied to.
+Same with 'padding: 0px auto'      meanwhile
+   'padding: 0 50px 0 40px'
+The above means padding: [top] [right] [bottom] [left]; 
+
+4. 'margin: 0'
+The above means no margin, so the space around the element is set to zero.
+
+5. 'box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);'
+The above means box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; 
+  The horizontal offset (required) of the shadow, positive means the shadow will be on the right of the box,
+a negative offset will put the shadow on the left of the box.
+  The vertical offset (required) of the shadow, a negative one means the box-shadow will be above the box,
+a positive one means the shadow will be below the box.
+  The blur radius (required), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be,
+and the further out the shadow will extend. For instance, a shadow with 5px of horizontal offset that also has a
+5px blur radius will be 10px of total shadow.
+  The spread radius (optional), positive values increase the size of the shadow, negative values decrease the size.
+Default is 0 (the shadow is same size as blur).
+  Color (required) – takes any color value, like hex, named, rgba or hsla. If the color value is omitted, box shadows
+are drawn in the current text color. But be aware, older WebKit browsers (pre Chrome 20 and Safari 6)
+ignore the rule when color is omitted.
+  note:'box-shadow: 2px 2px 2px 1px lightblue;'---you can just name the color.
+
+6. A hex color code is a 6‑symbol code representing a color
+named---you can just name the color.
+HSLA=hue saturation lightness and alpha
+RGBA=red green blue and alpha
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+7. transition: transform 0.3s ease;
+The above- to add transition effect, you must specify two things:the CSS property you want to add an effect to
+ and the duration of the effect (:-the example means transition effect on 'transform' property with duration of 0.3s and
+a transition timing function of "ease")
+"ease" specifies a transition timing function with a slow start, then fast, then end slowly.
+
+8. transform: scale(1.05);
+It kind of scales what it is applied to out in a ratio of 1.5
+It means the element will be scaled to 105% of its original size, makes the element 5% larger than its original size.
+It is actually meant to be 'transform: scale(x, y);'
+The x argument can be a number or percentage. It specifies the element's scaling factor along the x-axis.
+The y argument can also be a number or percentage. It defines the element's scaling factor along the y-axis.
+Y-axis' default value is x. Therefore, if you do not provide a y argument, the browser automatically uses x's value.
+Suppose x and y are equal. In that case, browsers will scale your element uniformly and preserve its aspect ratio.
+A value of 1 means the element remains at its original size.
+Values greater than 1 enlarge the element.
+Values less than 1 shrink the element.
+The transformation keeps the element's proportions intact.
+It only affects the visual size and not the actual space the element occupies in the document flow. This can be useful for effects
+like zooming without affecting the layout.
+
+9. 'object-fit: cover;'
+ For the above, The CSS object-fit property is used to specify how an <img> or <video>
+should be resized to fit its container. The object-fit property can take one of the following values:
+'object-fit: contain;' - The image keeps its aspect ratio, but is resized to fit within the given dimension
+   inside the element's content box.
+'object-fit: fill;' - This is default. The image is resized to fill the given dimension. If necessary,
+   the image will be stretched or squished to fit inside the element's content box.
+'object-fit: cover;' - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+'object-fit: none;' - The image is not resized to fit inside the element's content box.
+'object-fit: scale-down;' - the image is scaled down to the smallest version of none or contain
+   inside the element's content box.
+
+10. 'font-size: 1.5em;'
+For the above,1.5em: The unit em is relative to the font size of the parent element. The value 1.5em means
+the text size will be 1.5 times the size of the parent's font size.
+If the parent element has a font size of 16px, then the paragraph text will be 16px * 1.5 = 24px.
+The em unit allows for scalable text that adjusts according to the context, making it useful for responsive designs.
+
+11. Padding vs Margin
+Key Differences:
+Padding is the space inside the element, affecting the content's proximity to the element's border.
+Margin is the space outside the element, affecting the distance between the element and other elements on the page.
+Padding, pushing the content away from the edges.It affects the size of the element, as it increases the element's total width and height.
+Margin does not affect the element's size directly but creates space around it.
+   Visually, padding is like adding cushion inside the box, while margin is like spacing the box away from other boxes.
+
+12. border: 2px solid black;
+i.e border: width style color;
+Width: Specifies the thickness of the border (e.g., 1px, 2em).
+Style: Defines the appearance of the border (e.g., solid, dashed, dotted).
+Color: Sets the color of the border (e.g., red, #000, rgba(0, 0, 0, 0.5)).
+You can also apply borders to specific sides of an element (top, right, bottom, left) using the following properties:
+border-top, border-right, border-bottom & border-left.
+
+13. Display
+'display: inline;' The element is inline but cannot have its width or height controlled.
+'display: block;' The element is a block-level element, taking up the full width and forcing a new line.
+'display: inline-block;' The element remains inline, but you can adjust its size(width), margins, padding, and other box model properties 
+ (height & border) like a block.
+
+14.'display: flex;' is a property used to turn the element into a flex container, providing flexible and responsive layout system,
+allowing advanced control over its child elements, known as flex items.
+Key Features of 'display: flex;':
+ Flexible Layouts:
+i. Horizontal and Vertical Alignment: Flexbox allows you to align items horizontally and vertically with ease. For example, you can
+   center items both horizontally and vertically within the container.
+ii. Responsive Design: Flexbox makes it simpler to create layouts that adapt to different screen sizes and orientations.
+ Flex Container Properties:
+i.flex-direction: Defines the direction in which flex items are placed in the flex container (e.g., row, column).
+ii.justify-content: Aligns flex items along the main axis (e.g., center, space-between).
+iii.align-items: Aligns flex items along the cross axis (e.g., center, stretch).
+iv.align-content: Aligns flex lines within the flex container (used when there are multiple lines of flex items).
+ Flex Item Properties:
+i.flex-grow: Defines how much a flex item will grow relative to the rest of the flex items.
+ii.flex-shrink: Defines how much a flex item will shrink relative to the rest of the flex items.
+iii.flex-basis: Defines the initial size of a flex item before any growing or shrinking occurs.
+Example:
+  .container {
+    display: flex;
+    justify-content: center; /* Aligns items horizontally */
+    align-items: center;     /* Aligns items vertically */
+  }
+  .item {
+    flex: 1; /* Allows flex items to grow and shrink as needed */
+  }
+In this example, .container becomes a flex container, and its child elements (with the class .item) will be centered both horizontally
+and vertically within the container. The flex: 1; property on .item allows these items to grow and shrink to fill the available space
+evenly.If the container has more space than the combined width (or height) of its items, flex-grow: 1; makes the flex item expand to 
+fill the available space.
+Flexbox simplifies complex layouts and improves flexibility compared to older layout techniques like floats and inline-blocks.
+
+15.'display: grid;' turns an element into a grid container, enabling you to create two-dimensional layouts using rows and columns.
+Key Features of 'display: grid;':
+It is unlike Flexbox, which primarily handles one dimension at a time (either row or column).
+You can create layouts where items span multiple rows and columns, offering more versatility than Flexbox.
+  Grid Tracks:
+A grid layout consists of grid tracks (rows and columns) defined by the properties 'grid-template-rows' and 'grid-template-columns'.
+You can specify the size of rows and columns and control how much space each item takes up.
+  Grid Items:
+Child elements of the grid container automatically become grid items.
+You can position these items within specific rows and columns using the 'grid-row' and 'grid-column' properties.
+  Gaps:
+The grid-gap (or gap) property allows you to set the space between grid items, without needing to add margins or padding.
+Example:
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;  /* Two columns: 1 part and 2 parts wide */
+    grid-template-rows: auto 100px;  /* Two rows: one auto-sized, one 100px */
+    gap: 10px;                       /* Space between grid items */
+  }
+  .item1 {
+    grid-column: 1 / 2;  /* Occupies first column */
+    grid-row: 1 / 3;     /* Occupies both rows */
+  }
+  .item2 {
+    grid-column: 2 / 3;  /* Occupies second column */
+    grid-row: 1 / 2;     /* Occupies first row */
+  }
+  In this example,
+.container becomes a grid container with two columns and two rows.
+1fr 2fr means the first column takes up 1 fraction of the available space, and the second column takes 2 fractions.
+auto 100px sets the first row to automatically adjust based on content, and the second row has a fixed height of 100 pixels.
+.item1 spans both rows in the first column, while .item2 occupies the second column in the first row.
+  Grid Container Properties:
+grid-template-columns / grid-template-rows: Defines the size and structure of the grid’s columns and rows.
+grid-auto-flow: Controls the placement of grid items not explicitly positioned.
+align-items / justify-items: Controls the alignment of grid items inside their grid areas.
+  Grid Item Properties:
+grid-column / grid-row: Specifies the starting and ending positions for grid items within the grid.
+grid-area: Defines both rows and columns in one shorthand property.
+  Benefits of Grid:
+Precise control: You can place items in specific rows and columns.
+Responsive layouts: It’s easy to create complex, responsive layouts with features like minmax(), auto-fit, and auto-fill.
+Simplifies complex designs: Grid makes it easier to create structured layouts like dashboards, galleries, or multi-column pages.
+
+16. 
+auto-fit: Fits grid items into as many columns (or rows) as possible and collapses empty columns if there’s extra space.
+auto-fill: Also fits as many columns (or rows) as possible, but it fills the grid with empty tracks if there’s leftover space.
+minmax(): Syntax: minmax(min, max).Sets limits on how big or small individual grid items can grow or shrink within their columns or rows.
+  Example:
+'grid-template-columns: minmax(100px, 1fr) 200px;' --The first column will be at least 100px wide but can grow up to a fraction (1fr)
+of the remaining space. The second column will always be 200px wide.
+minmax() is very useful when you want to maintain a balance between responsiveness and content constraints (e.g., ensuring a column is
+never smaller than a certain size).
+
+'grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))'; --auto-fill will fill the grid with as many 150px wide columns
+as can fit in the container, but unlike auto-fit, it keeps the space for empty columns even if there aren't enough grid items.
+This is useful when you want grid tracks to be created regardless of the number of items, leaving gaps if necessary.
+
+'grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))'; --auto-fit tries to fit as many 150px wide columns as possible in the
+container, and any leftover space is distributed evenly across the columns. If there is extra space and not enough grid items,
+empty tracks are collapsed.
+n/b: auto-fit & auto-fill are often used with the 'repeat()' function to create grids where columns dynamically adjust based on
+available space.
+when we talk about responsiveness, "responive" means that it 'adapts to different screen sizes'.
+
+17. While using Googlefonts,
+ Use the display Property
+The 'display=swap' parameter in the Google Fonts link helps ensure that text is displayed as soon as possible, even if the font takes a moment to load.
+It is good practice to use this for a smoother user experience.
+How it's uesd: @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+                                                                                          above, above
+The URL includes specific font weights (400 for normal and 700 for bold) so you can use different font weights as needed.
+@import must be at the top of your CSS file or before any other style rules.
+
+
+RANDOM:secure access service edge (SASE) (also secure access secure edge)
+
+18. :root {
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+}
+How it's used:
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+p {
+    color: var(--gray);
+}
+The :root selector in CSS targets the highest-level parent element in your document, which is essentially the <html> element.
+It is similar to targeting the html element but provides better specificity when using CSS custom properties (also known as CSS variables).
+The --white, --black, and --gray are CSS variables (custom properties) that store the color values #f9f9f9, #36383F,
+and #85888C respectively to be used anywhere in your code.
+
+19.header {
+    position: sticky;
+    top: 0; /* The element becomes sticky when it's 0px from the top of the viewport */ meaning: stick to the top.
+    background-color: #f9f9f9;
+    z-index: 10;
+}
+position: sticky;: Makes the header element "sticky."
+How It Works:
+Initially, the element behaves as if it's position: relative;, meaning it follows the normal document flow.
+Once the user scrolls past a certain point (based on the specified offsets), it becomes position: fixed;, meaning it 
+sticks in place relative to the viewport until its containing block is scrolled out of view.
+top: 0;: Defines the threshold at which the element becomes sticky(stuck). In this case, when the user scrolls past the element, it sticks at
+the top of the viewport.
+z-index: 10;: Ensures that the sticky element stays on top of other content.
+
+20. <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+id="side-menu":
+The id attribute gives this checkbox a unique identifier (side-menu). This can be used to target the element with CSS, JavaScript,
+or to associate it with a <label> element for accessibility and improved usability.
+
+21. z-index: 1;
+The z-index property in CSS controls the stacking order of elements along the z-axis (which is the axis that runs perpendicular to the
+screen). It determines which elements appear in front of or behind others when they overlap.
+Explanation of z-index: 1;:
+z-index: 1; assigns the element a stacking order of 1.
+Elements with higher z-index values are displayed on top of elements with lower z-index values.
+Elements with higher z-index values (like z-index: 10) will always appear above elements with lower values (like z-index: 1).
+Only positioned elements (i.e., those with position: relative, absolute, fixed, or sticky) can have their z-index property take effect.
+
+22. justify-content  is used for columns.
+    align-content  is used for rows.
+ !!To do: check usage of "text-align-last: ;"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

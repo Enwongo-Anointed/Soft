@@ -1,0 +1,257 @@
+
+         !!!!!confirm No. 7!!!!!
+
+
+1.// You can create a constant array:
+const cars = ["Saab", "Volvo", "BMW"];
+                0        1       2
+// You can change an element:
+cars[3] = "Toyota";
+
+// You can add an element:
+cars.push("Audi");
+displaying: Saab,Volvo,BMW,Toyota,Audi
+
+2.// You can create a const object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// You can change a property:
+car.color = "red";
+
+// You can add a property:
+car.owner = "Johnson";
+
+3.let x = 10;                    or       text1 = "What a very ";
+x += 5; -- when displaying x,             text1 += "nice day";-- when displaying text1, text1 wil be...
+  x wil be displayed as "15"              ...displayed as "What a very nice day"
+The Addition Assignment Operator (+=) adds a value or string to a variable/string.
+
+Operator     Example	Same As
+   =         x = y	x = y      --gives variable y, same value as variable x
+   +=	     x += y	x = x + y  --adds a value/string to a variable/string
+   -=	     x -= y	x = x - y  --subtracts a value from a variable
+   *=	     x *= y	x = x * y  --multiplies a value with a variable
+   /=	     x /= y	x = x / y  --divides a variable by a value
+   %=	     x %= y	x = x % y  --modulus of a variable divided by a value
+   **=	     x **= y	x = x ** y --exponents a variable by a value
+
+4.Operator	Description
+    ==	         equal to
+   ===	         equal value and equal type
+    !=	         not equal
+   !==	         not equal value or not equal type
+    ?	         ternary operator(if-else conditional statement)
+
+5.let x = 5 + 5;
+  let y = "5" + 5;  5 in colons treated as a string
+  let z = "Hello" + 5;
+  The result of x, y, and z will be:
+
+  10
+  55 -----!!!!note this
+  Hello5
+
+6.Operator     Description
+    &&	        logical and
+    ||	        logical or
+    !	        logical not
+
+
+7.JavaScript Bitwise Operators
+Bit operators work on 32 bits numbers, Any numeric operand in the operation is converted into a 32 bit number.
+The result is converted back to a JavaScript number.
+   ......but the examples are carried out on 4 bits numbers
+  Operator   Description	    Example	Same as	    Result	Decimal
+    <<	     left shift	            5 << 1	0101 << 1    1010	  10   ---The left shift << moves all bits to the left by 1 position and fills the empty spaces on the right with 0s.
+    >>	     right shift	    5 >> 1	0101 >> 1    0010	  2    ---The right shift >> moves all bits to the right by 1 position and fills the empty spaces on the left with 0s.
+   >>>	     unsigned right shift   5 >>> 1	0101 >>> 1   0010	  2    ---maybe also deletes last digit, adds zero as first
+
+Key Differences of >>>(Unsigned right shift) From >> (Signed Right Shift):
+>>> (unsigned right shift) fills the left bits with 0 and treats the number as unsigned (non-negative), even if the original number
+is negative.
+>> (signed right shift) preserves the sign of the original number by filling the left bits with the sign bit (0 for positive numbers,
+1 for negative numbers).
+
+under here, we also have:
+ Operator    Example	Same As
+   <<=       x <<= y	x = x << y      --left shifts variable x by value y
+   >>=	     x >>= y	x = x >> y      --right shifts variable x by value y while preserving the sign
+   >>>=	     x >>>= y	x = x >>> y     --left shifts variable x by value y while not preserving the sign
+
+
+
+8.The increment operator (++) increments numbers.
+Example
+let x = 5;
+x++;
+let z = x; ----z will be = x+1 i.e 6
+same with     x--; it decrements numbers.
+
+OTHER NOTES: x ** y  ----exponents x by power y
+ also.... 'Math.pow(x,y)' produces the same result as x ** y
+When many operations have the same precedence (like addition and subtraction or multiplication and division), they are
+computed from left to right:Examples
+let x = 100 + 50 - 3;    ---addition before subtraction
+let x = 100 / 50 * 3;    ---subtraction before addition ...otherwise, it follows BODMAS
+
+9. NOTE!!:
+JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+   i.let x = 16 + 4 + " Volvo";
+   ii.let x = "Volvo" + 16 + 4;
+after console.log(x)
+RESULT is:
+   i.20 Volvo
+   ii.Volvo164
+explanation: since it started with string, it conseidered the rest a string also in the 2nd case.
+
+10. let y = 123e5;    returns 12300000
+    let z = 123e-5;   returns 0.00123
+JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented by a normal
+JavaScript Number.
+Example
+let x = BigInt("123456789012345678901234567890");
+A BigInt can not have decimals.
+You cannot perform math between a BigInt type and a Number type.
+
+11. JavaScript   arrays   are written with square brackets [].
+JavaScript   objects   are written with curly braces {}.
+Object properties are written as [name:"value pairs", separated by commas].
+
+Example
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
