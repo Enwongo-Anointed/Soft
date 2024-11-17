@@ -1,0 +1,9 @@
+                                    ALL IN GIT BASH
+mkdir <foldername> is used to create a folder
+touch <filename> is used to create a file inside the just created folder
+git log is used to show history
+git add(moves to staging area) > git commit(the actual version control) >
+git merge(merge work done by different parties on a project)
+git clone(make exact copy of this on my local)
+git pull(get new things to your local  from your remote)
+git push(send things to your remote from your local)

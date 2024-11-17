@@ -1,18 +1,3 @@
-// document.getElementById('').innerHTML='';
-// Add an event listener to a button
-// document.getElementById('btn').addEventListener('click', function() {
-//     alert('Button clicked!');
-//   });
-// let newItem = document.createElement('li');
-// newItem.innerText = 'jokeeee';
-// document.getElementById('Todos').appendChild(newItem);
-
-
-// console.log(`Hello`);
-// console.log(`I like Pizza!`)
-
-// window.alert(`This is an alert!`)
-// window.alert(`I like Pizza!`)
 
 document.getElementById("myH1").textContent = `Hello`
 document.getElementById("myP").textContent = `I like Pizza!`
@@ -55,3 +40,8 @@ function square(number) {
 console.log(square(2));
 console.log(square(22));
 // functions either  perform a task or calculate a value
+
+
+var Str = "Firstline\n\t\\Secondline\nThirdline" // Just testing this out
+console.log(Str);
+// \n=newline \t=tab \\=

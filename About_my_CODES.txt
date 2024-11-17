@@ -1,9 +1,25 @@
 A.html shows me how to create form, input video and also create table header and footer also.
 B.html is a table (a responsive one) ---incomplete
 C.html is a card (a responsive one) ---complete
-ran.html is for codes that I copy and paste to run the and see how they work.---mostly empty
+
 D.html is a gallery (a responsive one) ----kinda complete; needs js for navigation
    ---still  needs a screenshot
+E.html is a personal bio page
 F.html is a Google homepage clone ---complete
-G.html is for Hamburger menu ----has many versions:
-  G1
+G.html is for Hamburger menu ----has many versions ...that I deleted
+H.html is a portfolio page almost like E.html
+I.html is a duplicate of the Todoist app
+J.html is the one where I put text and picture side by side
+new.html is where I started trying to learn Javascript
+
+
+ran.html is for codes that I copy and paste to run the and see how they work.---mostly empty
+
+
+
+  1.html is an assignment on a table
+  2.html is an assignment on making clicking on a tab change text.
+  3.html is a cookie consent generation
+  3B.html is  another cokie consent generation
+  index.html is is where I started trying to learn Javascript(Abdiel's version)
+  test.html is just for testing.---mostly empty

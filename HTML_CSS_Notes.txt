@@ -267,8 +267,30 @@ Only positioned elements (i.e., those with position: relative, absolute, fixed, 
     align-content  is used for rows.
  !!To do: check usage of "text-align-last: ;"
 
+ 24. what does 'box-sizing: border-box;' do in css?
+In CSS, the box-sizing property determines how the width and height of an element are calculated. By default, the box-sizing property is set
+to 'content-box', which means that the specified width and height only apply to the content area of the element. Any additional padding or border
+will increase the total size of the element.   
+When you set box-sizing to 'border-box', the specified width and height include the padding and border of the element. This means that the content
+area will shrink to accommodate the padding and border, ensuring that the total size of the element remains consistent with the specified width and height.
 
+23. In Cascading Style Sheets (CSS), the property border-collapse: collapse; merges adjacent cell borders into a single border.
+This results in a more compact and cleaner table design.
+    The default value is separate, which means that each cell has its own distinct border. 
+    When border-collapse is set to collapse, properties like border-spacing and border-radius are not effective.
 
+24. width: calc(100% / 3 - 10px);
+    width: calc(): This part declares that we're going to calculate a width value using the calc() function.
+    100% / 3: This part divides the available width into three equal parts.
+    - 10px: This part subtracts 10 pixels from each of those thirds.
+    Visualizing the Result:
+ Imagine a container that's 100% wide. If you divide it into three equal parts, each part would be 33.33% wide. However,
+ by subtracting 10 pixels from each part, you're essentially creating three equally sized elements with a 10-pixel gap between them.
+
+ 25. <hr> severs the connection of things before it from those after it even it they are contained in a parent element with a class name
+ ... styling such elements only styles content before the <hr>
+
+ 26. use <br> to create a new line even in a paragraph.
 
 
 

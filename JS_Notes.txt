@@ -121,8 +121,8 @@ Example
 const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 
 
-
-
+Assignment: 1. Accordion (that frequently asked questions stuff where you click then the answers show)
+            2. Dropdown list where the things are ordered accordingly
 
 
 
